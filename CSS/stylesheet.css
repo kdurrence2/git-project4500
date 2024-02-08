@@ -1,0 +1,27 @@
+/* Add a background color to the nav bar */
+.navbar {
+    background-color: #0A1240;
+    overflow: hidden;
+  }
+  
+  /* Style nav bar links */
+  .navbar a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change link color on hover */
+  .navbar a:hover {
+    background-color: #0F1B5D;
+    color: #f2f2f2;
+  }
+  
+  /* Color for the active/current link */
+  .navbar a.active {
+    background-color: #560BBF;
+    color: white;
+  }
