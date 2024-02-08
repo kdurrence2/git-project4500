@@ -7,6 +7,7 @@ body{
 /* Add a background color to the nav bar */
 .navbar {
     background-color: #0A1240;
+    width: 100%;
     overflow: hidden;
   }
   
