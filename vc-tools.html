@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Version Control Tools</title>
+    <link rel="stylesheet" href="/C:/Program Files/Git/git-project4500/CSS/stylesheet.css">
+</head>
+<body>
+
+    <div class="navbar">
+
+        <a class="home" href="index.html">Home</a>
+        <div class="right">
+
+            <a href="getting-started.html">Getting Started</a>
+            <a href="vc-tools.html" class="active">Version Control Tools</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="textContent">
+
+        <h1>Version Control Tools</h1>
+        <p>The tools and methods on this page are key version control practices.</p>
+        <p><a id="reviewLink" href="index.html#verCon">Click here for a review on version control.</a> </p>
+
+        <div class="tableOfContents">
+            <div class="tocText">
+                <h3>On This Page:</h3>
+                <ul>
+                    <li><a href="#newRepo">Creating a New Repository on GitHub</a></li>
+                    <li><a href="#cloneRepo">Cloning a GitHub Repository on VS Code</a></li>
+                    <li><a href="#remoteRepo">Working with Remote Repositories</a></li>
+                    <li><a href="#branch">Branching</a></li>
+                    <li><a href="#pullReq">Pull Requests</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div>
+            <p class="sectionSymbol purple" id="newRepo"> &#9000; </p>
+
+            <h2>Creating a New Repository on GitHub</h2>
+            <hr class="purple">
+            <p>Before completing this step, it is helpful to have a GitHub account set up. You can set up a GitHub account 
+                <a href='https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home&ocid=AIDcmmcwpj1e5v_SEM__k_CjwKCAiAtt2tBhBDEiwALZuhAP2DmZmkfKCDlphwBMefBRF_pmHYFVWjuZMnjoWJydu4HewnW0wjaBoC7zkQAvD_BwE_k_'>
+                here</a>.</p>
+            <p>Once an account has been made, or if you already have an account, you can sign in and continue to the next step.</p>
+            <ol>
+                <li>Create a New Repository</li>
+                    <ul>
+                        <li>On the Home/Dashboard of GitHub, select the “+” symbol on the upper right hand corner and select “New Repository.”</li>
+                        <li class="noLiStyle"><img src="/git-project4500/img/13-github repository.png"></li>
+                    </ul>
+                <li>Complete the Form to Finalize the Repository</li>
+                    <ul>
+                        <li>The form will ask you to name your repository, make the repository public (anyone can see) or private (only available
+                            to your account). Once it is complete, select “Create Repository.”</li>
+                        <li class="noLiStyle"><img src="/git-project4500/img/14- repository form.png"></li>
+                    </ul>
+                <li>A New Repository Has Successfully Been Created!</li>
+                <ul>
+                    <li class="noLiStyle"><img src="/git-project4500/img/15- new repository created.png"></li>
+                </ul>
+            </ol>
+        </div>
+
+
+        <div>
+            <p class="sectionSymbol blue" id="cloneRepo">&lt; &gt;</p>
+
+            <h2>Cloning a GitHub Repository on VS Code</h2>
+            <hr class="blue">
+            <p>Cloning a remote repository allows you to create a copy of all code files and directory structure.</p>
+            <ol>
+                <li>Copy the Remote Repository URL</li>
+                    <ul>
+                        <li>You can quickly copy the repository URL by navigating to the “Code” tab, then selecting the green “Code” dropdown and copying the URL from the menu.</li>
+                        <li class="noLiStyle"><img src="/git-project4500/img/16-repository url.png"></li>
+                    </ul>
+                <li>Initiate Repository Clone in VS Code</li>
+                    <ul>
+                        <li>Return to VS Code.  Select the “+” menu near the “Source Control” header and select “Clone.”</li>
+                        <li class="noLiStyle"><img src="/git-project4500/img/17-source control.png"></li>
+                    </ul>
+                <li>Select “Clone from URL”</li>
+                <ul>
+                    <li>In the command line near the top of the screen, paste the copied URL to clone the repository from GitHub.</li>
+                    <li class="noLiStyle"><img src="/git-project4500/img/18-paste repository.png"></li>
+                </ul>
+                <li>Select the Destination Folder</li>
+                    <ul>
+                        <li>Assign a destination folder for the new repository. This can be a new or existing file.</li>
+                    </ul>
+                <li>The Repository Has Successfully Been Cloned!</li>
+                    <ul>
+                        <li>The cloned repository will open in a new VS Code window or you can add it to the current workspace.</li>
+                    </ul>
+            </ol>
+
+        </div>
+
+        <div>
+            <p class="sectionSymbol pink" id="remoteRepo">&#8644;</p> 
+
+            <h2>Working with Remote Repositories</h2>
+            <hr class="pink">
+            <p>Remote repositories on GitHub allow you to store your code on the cloud and share this code with potential
+                collaborators. Creating new repositories and switching between projects is important when working on many
+                projects at once.
+            </p>
+            <p>We have already reviewed how to create a remote repository on GitHub (see <a href="#newRepo">here</a> for a reivew).
+            In the next section, we will look at how to creat a remote repository and swap between remote repositories directly
+             from VS Code.</p>
+            <h3>Create a New Remote Repository from VS Code</h3>
+            <hr class="pink">
+            <ol>
+                <li>Open the "Source Control" Menu</li>
+                    <ul>
+                        <li>Select the “View” tab and then select the “Source Control.”</li>
+                        <li>Or, select the “Source Control” icon on the Action Bar on the left hand side of the screen. </li>
+                        <li class="noLiStyle"><img src="/git-project4500/img/32-source control.png"></li>
+                    </ul>
+                <li>Select “Open Folder”</li>
+                    <ul>
+                        <li>Select a folder to start or open a local repository on your device.</li>
+                        <li class="noLiStyle"><img src="/git-project4500/img/33-select open folder.png"></li>
+                    </ul>
+                <li>Select “Publish to GitHub”</li>
+                    <ul>
+                        <li>This will initialize and create a remote repository directly on GitHub. You can start utilizing Git
+                             and GitHub version control features.</li>
+                        <li class="noLiStyle"><img src="/git-project4500/img/34-initialize repository.png"></li>
+                    </ul>
+                <li>A New Remote Repository Has Successfully Been Created!</li>
+            </ol>
+            
+            <h3>Accessing a Different Remote Repository</h3>
+            <hr class="pink">
+            <p>You can use this method to access any additional remote repositories on GitHub from VS Code.</p>
+            <ol>
+                <li>Select the Blue “Open Remote Window” Symbol</li>
+                    <ul>
+                        <li>On the bottom right hand corner, select the double arrow “Open Remote Window symbol.</li>
+                        <li class="noLiStyle"><img src="/git-project4500/img/46- open remote window.png"></li>
+                    </ul>
+                <li>Select “Remote Repository”</li>
+                    <ul>
+                        <li>Select “Remote Repository” from the dropdown list on the command line bar.</li>
+                    </ul>
+                <li>Select “Open Repository from GitHub”</li>
+                    <ul>
+                        <li>Select ““Open Repository from GitHub” from the dropdown list on the command line bar.</li>
+                        <li class="noLiStyle"><img src="/git-project4500/img/47-open repo frm github.png"></li>
+                    </ul>
+                <li>Select a Remote Repository</li>
+                    <ul>
+                        <li>All available remote repositories on your GitHub account will appear in the drop down menu.
+                             Select the appropriate repository to switch over.</li>
+                    </ul>
+                <li>You Have Successfully Accessed a Different Remote Repository</li>
+                    <ul>
+                        <li>The selected repository will open on VS Code and you can begin working immediately.</li>
+                    </ul>
+            </ol>
+
+        </div>
+
+
+        <div>
+            <p class="sectionSymbol yellow" id="branch">&#10615;</p>
+            <h2>Branching</h2>
+            <hr class="yellow">
+            <h3>What is Branching?</h3>
+            <p>Branching is creating copies of code files to work on features or changes without altering the source code files.
+                Bracnhing is important for version control and is very beneficial for <b>feature development</b> and
+                <b>bug fixes</b>
+            </p>
+                <ol>
+                    <li>Branching is important for <b>feature development</b> because you can <b>make changes to code without compromising
+                         the base branch.</b> Beacuse you create a copy of code files, you ensure that there is always a working code file to fall back on.
+                         Additionally, being able to make multiple copies of a source code file allows team members to <b>work on different features at the same time.</b>
+                         This increases productivity and keeps developers from overwriting each other's work. </li>
+                    <li>Branching is also important for <b>fixing bugs</b> because, if all new code changes are made in a separate working branch, <b>bugs will be isolated
+                         within a specific branch.</b> This means that bugs can be caught before they are introduced into the base branch. Also, <b>branches can be made
+                          specifically for bug fixing.</b> These branches would be useful for isolating issues and also keeping a record of any bugs and solutions.</li>
+                </ol>
+            <h3>Creating Branches</h3>
+            <hr class="yellow">
+            <ol>
+                <li>Generate New Branch</li>
+                    <ul>
+                        <li>Next to the “Source Control” Header, select the menu icon (…). Select “Branch”, then “Create Branch”
+                             from the drop down menu.</li>
+                        <li class="noLiStyle"><img src="/git-project4500/img/28-create branches.png"></li>
+                    </ul>
+                <li>Name the Branch</li>
+                    <ul>
+                        <li>Type in the name of the new branch in the command line bar.</li>
+                        <li class="noLiStyle"><img src="/git-project4500/img/29- vsc prompt for branch.png"></li>
+                    </ul>
+                <li>The New Branch Has Sucessfully Been Created!</li>
+                    <ul>
+                        <li>The new branch&apos;s name appear in the bottom left hand corner. This new branch is now the working branch.</li>
+                        <li class="noLiStyle"><img src="/git-project4500/img/30-new branch.png"></li>
+                    </ul>
+            </ol>
+            <h3>Switching Between Branches</h3>
+            <hr class="yellow">
+            <ol>
+                <li>Select the Branch Name</li>
+                    <ul>
+                        <li>Select the branch name in the bottom left hand corner. A new menu will dropdown from the command bar.</li>
+                        <li class="noLiStyle"><img src="/git-project4500/img/31- switching between branches.png"></li>
+                    </ul>
+                <li>Select a Different Branch</li>
+                    <ul>
+                        <li>Select the appropriate branch in the command line dropdown list.</li>
+                        <li>The new branch&apos;s name appear in the bottom left hand corner.</li>
+                    </ul>
+            </ol>
+
+        </div>
+
+
+        <div>
+            <p class="sectionSymbol purple" id="pullReq">&#9886;</p>
+
+            <h2>Pull Requests</h2>
+            <hr class="purple">
+            <h3>What are Pull Requests?</h3>
+            <ol>
+                <li>Pull requests are a request to <b>compare changes</b> between branches and merge these changes, most commonly
+                     upstream into a main/base branch.</li>
+                <li>Pull requests are an important part of version control because they <b>identify what changes were made,
+                     give the opportunity for feedback on changes, and allow multiple contributors to work on a file at one time.</b></li>
+                <li>Pull requests open the floor to discuss features, code changes, potential corrections, constructive
+                     feedback etc. These discussions can be very helpful for <b>boosting team communication, learning new things, sharing tips,
+                      and checking that there are no issues with the code.</b></li>
+            </ol>
+            <h3>Creating Pull Requests</h3>
+            <hr class="purple">
+            <p>NOTE: Be sure to have two separate branches: a main branch and a working branch. Any code updates should be made within the working
+                 branch and later merged into the main branch.</p>
+            <ol>
+                <li>Sync Changes to Git Hub</li>
+                    <ul>
+                        <!-- Several links here -->
+                        <li>Make changes to a <a href="#branch">branch</a>, <a href="getting-started.html#commit">commit</a> these changes, and <a href="getting-started.html#push">push</a>
+                             these changes to the remote repository on GitHub.</li>
+                        <li>NOTE: These are reviews from earlier steps. Click on each concept for a review. </li>
+                    </ul>
+                <li>Select “Compare & pull request”</li>
+                    <ul>
+                        <li>Within the yellow banner, select “Compare & pull request” to review branch changes.</li>
+                        <li class="noLiStyle"><img src="/git-project4500/img/38-compareand pull requests.png"></li>
+                    </ul>
+                <li>Add a Title or Message for the Pull Request</li>
+                    <ul>
+                        <li>Once you have decided to merge the changes to a different branch, you can add a title and description to the pull request.</li>
+                        <li class="noLiStyle"><img src="/git-project4500/img/39-title pull request.png"></li>
+                    </ul>
+                <li>Review the Changes in the Code</li>
+                    <ul>
+                        <li>These changes will be listed under each commit and color coded based on the appropriate
+                             change type.</li>
+                        <li class="noLiStyle"><img src="/git-project4500/img/40- view changes in code.png"></li>
+                        <li>You can also see the code in more detail by clicking on the commit title.</li>
+                        <li class="noLiStyle"><img src="/git-project4500/img/41-more detail.png"></li>
+                    </ul>
+                <li>Leave Comments if Needed</li>
+                    <ul>
+                        <li>General comments can be left in the comment box beneath the changes or
+                             by hovering over specific lines of code and clicking the blue “+” that appears.</li>
+                        <li class="noLiStyle"><img src="/git-project4500/img/42-comments if needed.png"></li>
+                    </ul>
+                <li>Select "Create Pull Request"</li>
+                    <ul>
+                        <li>Select green "create pull requet button" above the code review section.
+                        </li>
+                        <li class="noLiStyle"><img src="/git-project4500/img/46- create pull request btn.png"></li>
+                    </ul>
+            </ol>
+            <h3>Completing a Pull Request</h3>
+            <hr class="purple">
+            <ol>
+                <li>Review the Pull Request Before Merging</li>
+                    <ul>
+                        <li>All the code changes and comments will be accessible in the review screen.</li>
+                        <li>You can select each commit title and see the code in detail.</li>
+                        <li class="noLiStyle"><img src="/git-project4500/img/43-review pull request.png"></li>
+                    </ul>
+                <li>Select “Merge pull request”</li>
+                    <ul>
+                        <li>First, select "Merge pull request" beneath the reviewed information.</li>
+                        <li class="noLiStyle"><img src="/git-project4500/img/49-confirm pull request.png"></li>
+                        <li>Next, select "Confirm merge" to finalize the merge.</li>
+                        <li class="noLiStyle"><img src="/git-project4500/img/44-merge pull request.png"></li>
+                    </ul>
+                <li>Your Branches Have Merged Successfully!</li>
+                    <ul>
+                        <li>A success message will appear once the merge is completed. The “New Feature” branch can be closed and deleted.</li>
+                        <li>Your merged changes will appear in the main branch.</li>
+                        <li class="noLiStyle"><img src="/git-project4500/img/45-branches merge succesfully.png"></li>
+                    </ul>
+            </ol>
+
+        </div>
+
+        <div class="tableOfContents">
+            <div class="tocText">
+                <h3>Review:</h3>
+                <ul>
+                    <li><a href="#newRepo">Creating a New Repository on GitHub</a></li>
+                    <li><a href="#cloneRepo">Cloning a GitHub Repository on VS Code</a></li>
+                    <li><a href="#remoteRepo">Working with Remote Repositories</a></li>
+                    <li><a href="#branch">Branching</a></li>
+                    <li><a href="#pullReq">Pull Requests</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+
+        <p><small>This is a class project. IAD 4500 &#169;</small></p>
+    
+    </footer>
+
+</body>
+</html>
