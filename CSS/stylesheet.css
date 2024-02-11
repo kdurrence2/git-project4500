@@ -85,7 +85,8 @@ a.tableOfContents{
 }
 
 img{
-  width: 100%;
+  display:block;
+  width: 75%;
   height: auto;
   overflow:hidden;
   margin: 1.75vh auto;
@@ -270,7 +271,8 @@ code{
     }
     
     img{
-      width: 100%;
+      display:block;
+      width: 75%;
       max-width: 55vw;
       height: auto;
       overflow:hidden;
@@ -361,7 +363,8 @@ code{
     }
     
     img{
-      width: 100%;
+      display:block;
+      width: 75%;
       max-width: 55vw;
       height: auto;
       overflow:hidden;
