@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Started</title>
+    <link rel="stylesheet" href="/C:/Program Files/Git/git-project4500/CSS/stylesheet.css">
+</head>
+<body>
+
+    <div class="navbar">
+
+        <a class="home" href="index.html">Home</a>
+        <div class="right">
+            <a href="getting-started.html" class="active">Getting Started</a>
+            <a href="vc-tools.html">Version Control Tools</a>
+
+        </div>
+    </div>
+
+    <div class="textContent">
+        <div>
+            <h1>Getting Started</h1>
+            <p>The basics to get you started with using Git and Visual Studio Code! </p>
+
+            <div class="tableOfContents">
+                <div class="tocText">
+                    <h3>On This Page:</h3>
+                    <ul>
+                        <li><a href="#installGit">Installing Git</a></li>
+                        <li><a href="#installVSC">Installing Visual Studio Code</a></li>
+                        <li><a href="#configGit">Configuring Git</a></li>
+                        <li><a href="#gitOps">Basic Git Operations</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <p class="sectionSymbol purple" id="installGit">&#9965;</p>
+
+            <h2>Installing Git</h2>
+            <hr class="purple">
+            <ol>
+                <li>Navigate to <a href src="https://git-scm.com/">https://git-scm.com/</a> in your browser.</li>
+                <li>Navigate to the Git Setup File Download</li>
+                    <ul>
+                        <li>Select the “Download for [OS]” button on the lower right hand side of the screen to
+                            access the download link that matches your operating system.</li>
+                        <li>The browser will detect the correct operating system and the appropriate download file
+                            will be the default option.</li>
+                        <li class="noLiStyle"><img src="/C:/Program Files/Git/git-project4500/img/2-selectdownload position.png"></li>
+                    </ul>
+                <li>Select the Download link</li>
+                    <ul>
+                        <li>The latest release version download link is at the top of the page.</li>
+                        <li class="noLiStyle"><img src="/git-project4500/img/3-download link.png"></li>
+                    </ul>
+                <li> Access the Setup File from Downloads</li>
+                    <ul>
+                        <li>In the top right corner of your browser, select the downloaded icon to
+                            access your recent downloaded files. Select the Git Setup file to begin the
+                            installation.</li>
+                        <li class="noLiStyle"><img src="/git-project4500/img/4-start installation.png"></li>
+                    </ul>
+                <li>Complete the Git Setup Process</li>
+                    <ul>
+                        <li>Complete all initial set up steps to finish the installation.</li>
+                        <li>Read each option carefully and make changes if necessary or use the default 
+                            option.</li>
+                    </ul>
+                <li>Git Has Been Successfully Installed!</li>
+                    <ul>
+                        <li>You can now use Git version control functions in your projects!</li>
+                    </ul>
+                <li>NOTE: Setting The Git Default Editor</li>
+                    <ul>
+                        <li>Git will ask you to choose a default editor application. For the purposes of
+                            this tutorial, we will be utilizing Visual Studio Code (VS Code) as the default
+                            code editor. This option will require VS Code to be downloaded outside of this 
+                            installer. </li>
+                        <li>If you have not already downloaded VS Code, you can select the link in the menu 
+                            and download the editor. <a href="#">VS Code Download Instructions</a></li>
+                            <!-- Link to VS Code Header here -->
+                        <li>You will need to close the Git Setup Wizard, download Visual Studio Code, then
+                            reopen the Git Setup Wizard again. The setup wizard can be found in File Explorer → Downloads.</li>
+                    </ul>
+            </ol>
+        </div>
+
+
+        <div>
+            <p class="sectionSymbol blue" id="installVSC"> &lt; &gt;</p>
+
+            <h2>Installing Visual Studio Code</h2>
+            <hr class="blue">
+            <ol>
+                <li>Navigate to <a href src="https://code.visualstudio.com//">https://code.visualstudio.com//</a> in your browser.</li>
+                <li>Select the “Download for (OS)” Button</li>
+                    <ul>
+                        <li>The browser will detect the correct operating system and the appropriate download file will be the default option.</li>
+                        <li class="noLiStyle"><img src="/git-project4500/img/5-detect OS.png"></li>
+                    </ul>
+                <li>Access the File from Downloads</li>
+                    <ul>
+                        <li>In the top right corner of your browser, select the downloaded icon to access your recent downloaded files. Select the 
+                            VS Code Setup file to begin the installation.</li>
+                        <li class="noLiStyle"><img src="/git-project4500/img/6-download icon.png"></li>
+                    </ul>
+                <li>Complete the VS Code Setup Process</li>
+                    <ul>
+                        <li>Complete all initial set up steps to finish the installation.</li>
+                        <li>Read each option carefully and make changes if necessary or use the default option.</li>
+                    </ul>
+                <li>Visual Studio Code Has Been Successfully Installed!</li>
+                    <ul>
+                        <li>You can now start using VS Code for code editing!</li>
+                    </ul>
+                <li>Optional: Complete the VS Code Walkthrough</li>
+                    <ul>
+                        <li>This internal setup and walkthrough will help you personalize your experience and get more familiar with the program.</li>
+                    </ul>
+                <li>Recommended: Install Code Language Extensions</li>
+                    <ul>
+                        <li>Code Language Extensions will provide auto-complete suggestions, syntax assistance, and debugging options. Some languages
+                            come preset and others will need to be downloaded as extensions.</li>
+                        <li>You can download these extensions during the walkthrough or any time from the action bar on the left hand side by clicking
+                            on the “Extensions” icon.</li>
+                        <li class="noLiStyle"><img src="/git-project4500/img/8-code language extensions.png"></li>
+                    </ul>
+            </ol>
+        </div>
+
+
+        <div>
+            <p class="sectionSymbol pink" id="configGit"> &#9903; </p>
+
+            <h2>Configuring Git</h2>
+            <hr class="pink">
+            <p>Before jumping into the code, Git will need to be configured with <b>author information.</b> This information is used with each change and commit
+                within the code files. The essential information is your <b>name and email address.</b></p>
+            <ol>
+                <li>Access the Terminal Under the “View” Tab</li>
+                    <ul>
+                        <li>While the new local repository is still open, access the “View” tab then select “Terminal.” </li>
+                        <li class="noLiStyle"><img src="/git-project4500/img/9-terminal under view tab.png"></li>
+                    </ul>
+                <li>Open Git Bash in the Terminal</li>
+                    <ul>
+                        <li>Near “powershell” and “+” symbol, select the dropdown arrow and select “Git Bash.”</li>
+                        <li>Git Bash is the terminal for Git command lines. The commands needed to set the user username and email address will need to be
+                                run in Git Bash to take effect.</li>
+                        <li class="noLiStyle"><img src="/git-project4500/img/10-open gitbash.png"></li>
+                    </ul>
+                <li>Set Your Username and Email Address</li>
+                    <ul>
+                        <li>Use the <code>$ git config --global user.name "ENTER YOUR NAME"</code> command to set your user name and <code>“$ git config --global user.email johndoe@example.com ”</code>
+                                to set your email address.</li>
+                        <li>Using the <code>- - global</code> option means that this information will be used for any changes made within the system. </li>
+                        <li class="noLiStyle"><img src="/git-project4500/img/11-set username and email.png"></li>
+                    </ul>
+                <li>NOTE: How to Check These Settings</li>
+                    <ul>
+                        <li>You can check that these settings were updated by entering <code>$ git config user.name</code>  and <code>$ git config user.email</code> in the terminal.</li>
+                        <li class="noLiStyle"><img src="/git-project4500/img/12-how to check settings.png"></li>
+                    </ul>
+            </ol>
+        </div>
+
+
+        <div>
+            <p class="sectionSymbol yellow" id="gitOps"> &#9000; </p>
+
+            <h2>Basic Git Operations</h2>
+            <hr class="yellow">
+            <p>Here is how to perform basic Git operations through the VS Code terminal.</p>
+            <ol>
+                <li>Add</li>
+                    <ul>
+                        <li>Git Command: In the terminal , the <code>git add</code> command will add content/changes from the current file to the index (the staged area that is ready
+                            for commit.)</li>
+                        <li class="noLiStyle"><img src="/git-project4500/img/19-add command.png"></li>
+                        <li>VS Code GUI: Select the plus sign “+” on the file with untracked changes (marked with a U).</li>
+                        <li class="noLiStyle"><img src="/git-project4500/img/20-files marked with U.png"></li>
+                        <li>Once the changes are added (staged), you will see the file has been marked with an “A” and moved to the “Staged Changes” section.</li>
+                        <li class="noLiStyle"><img src="/git-project4500/img/21-staged changes.png"></li>
+                    </ul>
+                <li>Status</li>
+                    <ul>
+                        <li> Git Command: The <code>git status</code> command will show you a list of files that have changes and are staged (added) for the next commit.</li>
+                        <li class="noLiStyle"><img src="/git-project4500/img/22-Status command.png"></li>
+                    </ul>
+                <li id="commit">Commit</li>
+                    <ul>
+                        <li>Git Command: The <code>git commit</code> command will record added/staged changes made in the index to the repository.</li>
+                        <li>VS Code GUI: Select the “Commit” button in the “Source Control” panel. A message can be added in the text input field above to describe the commit
+                            and the changes that were made.</li>
+                        <li class="noLiStyle"><img src="/git-project4500/img/22-Status command.png"></li>
+                    </ul>
+                <li id="push">Push</li>
+                <!-- This includes the "Push and Pull from Remote Repositories Using VS Code Interface" requirement -->
+                    <ul>
+                        <li>Git Command:The <code>git push</code> command will upload all local branch commits to GitHub/the remote repository.</li>
+                        <li>VS Code GUI: Select “Publish Branch” and the local repository will upload to GitHub.</li>
+                        <li class="noLiStyle"><img src="/git-project4500/img/25-Push command.png"></li>
+                        <li>The changes can be seen on the GitHub repository.</li>
+                    </ul>
+                <li>Pull</li>
+                    <ul>
+                        <li>Git Command: The <code>git pull</code> command will update the current local working branch with any new updates from the corresponding remote branch
+                            on GitHub.</li>
+                        <li>This command downloads all changes from remote branches (fetch) and combines remote branches changes into the current branch (merge).</li>
+                        <li>VS Code GUI: Select the menu (…) next to the “Source Control” Header and select “Pull”</li>
+                        <li class="noLiStyle"><img src="/git-project4500/img/26-pull command.png"></li>
+                        <li class="noLiStyle"><img src="/git-project4500/img/27-pull continued command.png"></li>
+                    </ul>
+            </ol>
+        </div>
+
+        <div class="tableOfContents">
+            <div class="tocText">
+                <h3>Review:</h3>
+                <ul>
+                    <li><a href="#installGit">Installing Git</a></li>
+                    <li><a href="#installVSC">Installing Visual Studio Code</a></li>
+                    <li><a href="#configGit">Configuring Git</a></li>
+                    <li><a href="#gitOps">Basic Git Operations</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+
+        <p><small>This is a class project. IAD 4500 &#169;</small></p>
+    
+    </footer>
+
+</body>
+</html>
