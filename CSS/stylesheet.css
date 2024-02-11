@@ -279,6 +279,10 @@ code{
       margin: 1.75vh 0vw;
     }
 
+    .hero-image{
+      height:65%;
+    }
+
     .sectionSymbol{
       font-size: 4.55vw;
       text-align: center;
@@ -371,6 +375,10 @@ code{
       margin: 1.5vh auto;
     }
 
+    .hero-image{
+      height:45%;
+    }
+
     .sectionSymbol{
       font-size: 3em;
       text-align: center;
@@ -461,6 +469,10 @@ code{
       height: auto;
       overflow:hidden;
       margin: 1.85vh auto;
+    }
+
+    .hero-image{
+      height:70%;
     }
 
     .sectionSymbol{
