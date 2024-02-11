@@ -387,4 +387,96 @@ code{
 
   }
 
+  /* Desktop screens */
+  @media screen and (min-width:1025px){
+
+    .textContent{
+      background-color: white;
+      width: 85%;
+      margin: 4vh auto;
+      padding: 1vh 3vw;
+    }
+
+    h1{
+      font-size: 2.35em;
+    }
+    
+    h2{
+      font-size: 2em;
+    }
+    
+    h3{
+      font-size: 1.85em;
+    }
+    
+    p{
+      padding: 1vh 2vw;
+      margin: 3vh 2vw;
+      font-size: 1.2em;
+    }
+    
+    ol{
+      padding: 1vh 2vw;
+      margin: 3vh 2vw;
+      font-size: 1.15em;
+    }
+    
+    li{
+      padding: 1.5vh 1vw;
+      font-size: 1em;
+    }
+
+    .navbar a {
+      float: left;
+      color: white;
+      text-align: center;
+      padding: 2.2vh 2.25vw;
+      text-decoration: none;
+      font-size: 1em;
+    }
+
+    .tableOfContents{
+      width: 50%;
+      height:auto;
+      margin: 8vh auto;
+    }
+
+    .tocText{
+      background-color: lightgray;
+      border-radius: 8px;
+      padding: 2.5vh 4vw;
+      margin-left:auto;
+      margin-right: auto;
+      width:fit-content;
+    }
+
+    a.tableOfContents{
+      font-size: 1.2em !important;
+    }
+    
+    img{
+      display:block;
+      width: 75%;
+      max-width: 55vw;
+      height: auto;
+      overflow:hidden;
+      margin: 1.85vh auto;
+    }
+
+    .sectionSymbol{
+      font-size: 3.5em;
+      text-align: center;
+      padding: 2vh 0vw;
+    }
+
+    footer{
+      text-align: center;
+      background-color:#0A1240;
+      color: white;
+      padding: 2vh;
+      margin-top: 5vh;
+    }
+
+  }
+
 /* WHEW */
